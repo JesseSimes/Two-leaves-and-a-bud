@@ -1,0 +1,1601 @@
+@font-face {
+    font-family: Reckless;
+    src: url(./RecklessCondensedS-TRIAL-Book.woff);
+}
+
+@font-face {
+    font-family: Figtree;
+    src: url(./figtree_n4.3c0838aba1701047e60be6a99a1b0a40ce9b8419.woff2);
+}
+
+@font-face {
+    font-family:  Midnight;
+    src: url(./midnight-sans-rd-12-medium-trial.otf);
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url(./RobotoMono-Medium.ttf);
+}
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+html,body{
+    width: 100%;
+    height: 100vh;
+    background-color: beige;
+}
+
+nav{
+    width: 100%;
+    background-color: #FFFEFB;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: Reckless;
+    padding: 0.8rem 1rem;
+    font-size: 0.8rem;
+    position: sticky;
+}
+
+nav .navs1{
+    display: flex;
+    gap: 1rem;
+}
+
+nav .navs3{
+    display: flex;
+    gap: 1rem;
+}
+
+.navs1 h3{
+    font-weight: 300;
+}
+
+.navs3 h3{
+    font-weight: 300;
+}
+
+.navs2 img{
+    width: 100%;
+    object-fit: cover;
+}
+
+.navs3 svg{
+    width: 30px;
+    height: 30px;
+}
+
+#s1{
+    width: 100%;
+    height: 80vh;
+    background-image: url(https://www.twoleavestea.com/cdn/shop/files/AlpineBerry_mobile.webp?v=1774284087&width=720);
+    background-size: cover;
+    background-position: center;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+    padding: 3rem 1rem;
+    color: #FFFEFB;
+    gap: 1rem;
+    text-align: center;
+}
+
+#s1 h1{
+    font-size: clamp(3.5rem,5vw,5rem);
+    font-family: Reckless;
+    font-weight: 500;
+}
+
+#s1 p{
+    font-size: clamp(1.2rem,1vw ,1.5rem);
+    font-family: Figtree;
+    font-weight: 400;
+}
+
+#s1 button{
+    background-color: rgb(32, 32, 92);
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 50px;
+    color: #FFFEFB;
+    font-family: Figtree;
+    font-weight: 400;
+    font-size: 1.2rem;
+}
+
+#s2{
+    width: 100%;
+    height: 100vh;
+    padding: 8rem 1rem; 
+    display: flex;
+    flex-direction: column;  
+}
+
+#s2 .s2t{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Reckless;
+    text-align: center;
+}
+
+.s2t h1{
+     font-size: clamp(2.2rem,8vw,6rem);
+     font-weight: 300;
+     width: 80%;
+  
+}
+
+
+#s2 .btn-1{
+    padding: 0.1rem 0.5rem;
+    font-size: 3rem;
+    font-family: Midnight;
+    font-weight: 600;
+    background-color: #DAAEEA;
+    border-radius: 1.2rem;
+    text-transform: uppercase;
+    margin-top: 5rem;
+    rotate: -5deg;
+    letter-spacing: 2px;
+    margin: auto;
+}
+
+
+#s2 .card-container{
+    width: 100%;
+    padding: 2rem 0;
+    display: flex;
+    overflow-x: auto;
+}
+.card-container::-webkit-scrollbar{
+  display: none;
+}
+.card{
+    display:flex ;
+    flex-direction: column;
+    gap: 1rem;
+    flex-shrink: 0;
+}
+.card-top{
+    width: 90%;
+    height: 35vh;
+    background-color: #C1EE91;
+    position: relative;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: space-between;
+    border-radius: 1rem;
+    border: 1px solid #000;
+    overflow: hidden;
+}
+
+.card-top-text{
+    width: 100%;
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    
+}
+.card-top-text button{
+    padding: 0.2rem 0.5rem;
+    border-radius: 0.2rem;
+    border: 1px solid #000;
+   background-color: #fff;
+   font-family: Midnight;
+   font-size: 1.2rem;
+   text-transform: uppercase;
+   display: block;
+   
+   font-weight: 400;
+}
+.card-top-text span{
+    font-size: 1.2rem;
+    font-family: Reckless;
+}
+.card-top img{
+    height: 90%;
+    width: 90%;
+    object-fit: cover;
+    object-position: center;
+  position: absolute;
+  transition: all ease 0.3s;
+}
+
+
+.card-btm-text{
+    background-color: #fff;
+    padding: 0.6rem 0.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.3rem;
+    font-family: Reckless;
+    font-size: 1.2rem;
+}
+
+.card-top:hover img{
+    scale: 1.1;
+}
+
+.card-btm{
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+     font-family: Reckless;
+     align-items: start;
+}
+
+.card-btm h1{
+ font-family: 0.3rem;
+ font-weight: 100;
+}
+
+.card-btm h3{
+ font-family: 0.3rem;
+ font-weight: 100;
+}
+.card-btm p{
+ font-weight: 100;
+opacity: 0.5;
+width: 90%;
+}
+
+.btn-container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.btm-btn{
+    
+   padding: 1.2rem 3.5rem;
+    border: none;
+    background-color: #2A2857;
+    color: white;
+    font-family: Figtree;
+    border-radius: 50px;
+    font-size: 1.1rem;
+}
+
+#s3{
+    width: 100%;
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem 2rem;
+    gap: 3rem;
+}
+
+#s3 .s3t{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2rem;
+    width: 100%;
+    max-width: 900px;
+}
+
+.s3t button{
+    padding: 0.1rem 0.5rem;
+    font-size: 3rem;
+    font-family: Midnight;
+    font-weight: 600;
+    background-color: orange;
+    border-radius: 1.2rem;
+    text-transform: uppercase;
+    rotate: -5deg;
+    letter-spacing: 2px;
+}
+
+#s3 h3{
+    color: #000;
+    font-weight: 100;
+    font-family: Reckless;
+    font-size: clamp(2.5rem,5vw,5rem);
+    line-height: 1;
+}
+
+.s3t input{
+    padding: 2rem;
+    width: 100%;
+    max-width: 600px;
+    border-radius: 1.5rem;
+    font-size: 2rem;
+    font-family: Reckless;
+    font-weight: 100;
+}
+
+#s3 .s3b{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    width: 100%;
+    max-width: 900px;
+}
+
+.s3b button{
+    background-color: rgb(173, 173, 255);
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+    font-size: 1.2rem;
+    font-family: Figtree;
+    font-weight: 100;
+}
+
+#s4{
+    width: 100%;
+    min-height: 100vh;
+
+    background-color: #DAAEEA;
+    background-image: url(https://images.unsplash.com/photo-1476231682828-37e571bc172f?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Zm9yZXN0JTIwYWVyaWFsfGVufDB8fDB8fHww);
+
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    color: white;
+
+    padding: 6rem 2rem;
+    gap: 4rem;
+}
+
+#s4{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    gap: 13rem;
+    padding: 10rem;
+}
+
+#s4 .btn-1 button{
+    padding: 0.1rem 0.5rem;
+    font-size: 3rem;
+    font-family: Midnight;
+    font-weight: 600;
+    background-color: #aeddea;
+    border-radius: 1.2rem;
+    text-transform: uppercase;
+    margin-top: 5rem;
+    rotate: -5deg;
+    letter-spacing: 2px;
+    margin: auto;
+}
+
+#s4 h1{
+    font-size: clamp(3rem, 8vw, 5rem);
+    text-align: center;
+    font-family: Roboto;
+    line-height: 1;
+}
+
+#s4 p{
+    text-align: center;
+    font-family: Reckless;
+    font-size: clamp(1.1rem, 2vw, 1.6rem);
+    font-weight: 100;
+    line-height: 1.5;
+    max-width: 800px;
+}
+
+.iconl h4{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+}
+
+.iconm h4{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+}
+
+.iconr h4{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+}
+
+.icon img{
+    width: 100px;
+    height: auto;
+}
+
+.icon{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 4rem;
+    width: 100%;
+}
+
+#s4 .btn-2 button{
+    padding: 1rem 6rem;
+    font-size: 1.5em;
+    border-radius: 50px;
+    background-color: white;
+}
+
+#s5{
+    width: 100%;
+    padding: 6rem 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    overflow: hidden;
+}
+
+
+.s5p1{
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#s5 .s5p1 button{
+    width: fit-content;
+    padding: 0.2rem 1rem;
+    font-size: 2rem;
+    font-family: Midnight;
+    font-weight: 600;
+    background-color: #569055;
+    border-radius: 1rem;
+    text-transform: uppercase;
+    rotate: -5deg;
+    letter-spacing: 2px;
+    border: none;
+}
+
+#s5 h2{
+    color: #000;
+    font-weight: 100;
+    font-family: Reckless;
+    font-size: clamp(3rem,5vw,5rem);
+    line-height: 1.1;
+}
+
+
+.s5p2{
+    width: 100%;
+    overflow-x: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.s5p2::-webkit-scrollbar{
+    display: none;
+}
+
+.cards5{
+    width: max-content;
+    display: flex;
+    gap: 2rem;
+    padding-bottom: 1rem;
+}
+
+.card5{
+    width: 280px;
+    height: 380px;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 2rem 1.2rem;
+    border-radius: 1.5rem;
+    flex-shrink: 0;
+}
+
+
+.card5 .context{
+    text-align: center;
+}
+
+.card5 .context h3{
+    font-size: 2rem;
+    font-family: Reckless;
+    font-weight: 100;
+    line-height: 1.2;
+}
+
+.card5 .context p{
+    margin-top: 1rem;
+    font-size: 1rem;
+    font-family: Figtree;
+}
+
+
+.card5 .cardbtm{
+    width: 100%;
+    border: 2px solid black;
+    border-radius: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.cardbtm img{
+    width: 50px;
+    height: 50px;
+    background: white;
+    border-radius: 50%;
+}
+
+.cardbtm p{
+    flex: 1;
+    font-size: 0.8rem;
+    line-height: 1.2;
+    font-family: Figtree;
+}
+
+.cardbtm button{
+    padding: 0.7rem 1rem;
+    border-radius: 50px;
+    border: none;
+    background: white;
+    cursor: pointer;
+}
+
+
+.card5:nth-child(1){
+    background-color: #f9e4c8;
+}
+
+.card5:nth-child(2){
+    background-color: #d4edda;
+}
+
+.card5:nth-child(3){
+    background-color: #cce5ff;
+}
+
+.card5:nth-child(4){
+    background-color: #fff3cd;
+}
+
+.card5:nth-child(5){
+    background-color: #f8d7da;
+}
+
+#s6{
+    width: 100%;
+    min-height: 95vh;
+    background-color: #2A2857;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.s6p1{
+    width: 50%;
+    height: 95vh;
+}
+
+.s6p1 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.s6p2{
+    width: 50%;
+    padding: 4rem;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.s6p2 h3{
+    font-family: Reckless;
+    font-size: clamp(3.5rem,5vw,5rem);
+    font-weight: 100;
+    line-height: 1;
+}
+
+.s6p2 p{
+    font-family: Figtree;
+    font-size: 1.3rem;
+    line-height: 1.6;
+    max-width: 500px;
+}
+
+.s6p2 button{
+    width: fit-content;
+    border: none;
+    border-radius: 50px;
+    padding: 1rem 3rem;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+#s7{ width: 100%; height: 80vh; background-color: rgb(159, 100, 41); display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 10rem; } #s7 .s7p2{ width: 95vw; height: 35vh; background-color: #FFCB96; display: flex; align-items: center; justify-content: center; gap: 20rem; } #s7 .s7p2 img{ transform: scale(2.5); } #s7 .s7p1{ display: flex; flex-direction: column; align-items: center; justify-content: center; } #s7 .s7p1 button{ padding: 0.1rem 0.5rem; font-size: 3rem; font-family: Midnight; font-weight: 600; background-color: #569055; border-radius: 1.2rem; text-transform: uppercase; margin-top: 5rem; rotate: -5deg; letter-spacing: 2px; margin: auto; } #s7 .s7p1 h3{ color: white; font-family: midnight; font-size: 5rem; font-weight: 200; } #s7 .s7p1 p{ color: white; font-family: roboto; font-size: 1rem; font-weight: 200; } #s7 .s7p2 #c1{ padding: 0.1rem 0.5rem; font-size: 3rem; font-family: Midnight; font-weight: 600; background-color: #569055; border-radius: 1.2rem; text-transform: uppercase; margin-top: 5rem; rotate: -5deg; letter-spacing: 2px; margin: auto; } #s7 .s7p2 h2{ color: black; font-family: Reckless; font-size: 4rem; font-weight: 200; } #s7 .s7p2 p{ color: black; font-family: figtree; font-size: 1rem; font-weight: 200; } .s7p2 #c2{ border: none; border-radius: 50px; padding: 1rem 3rem; font-size: 1rem; border: 1px solid black; }
+
+#s8{
+    padding: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2.5rem;
+    overflow-x: clip;
+    overflow-y: visible;
+}
+
+#s8 .s8p1 button{
+    padding: 0.1rem 0.5rem;
+    font-size: 3rem;
+    font-family: Midnight;
+    font-weight: 600;
+    background-color: #569055;
+    border-radius: 1.2rem;
+    text-transform: uppercase;
+    margin-top: 5rem;
+    rotate: -5deg;
+    letter-spacing: 2px;
+    margin: auto;
+}
+
+#s8 h2{
+    color: #000;
+    font-weight: 100;
+    font-family: Reckless;
+    font-size: clamp(2.5rem,4vw,4rem);
+}
+
+
+#s8 .card-container{
+    width: 100%;
+    padding: 2rem 0;
+    display: flex;
+    overflow-x: auto;
+}
+#s8 .card-container::-webkit-scrollbar{
+  display: none;
+}
+#s8 .card{
+    display:flex ;
+    flex-direction: column;
+    gap: 1rem;
+    flex-shrink: 0;
+}
+#s8 .card-top{
+    width: 90%;
+    height: 35vh;
+    background-color: #C1EE91;
+    position: relative;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: space-between;
+    border-radius: 1rem;
+    border: 1px solid #000;
+    overflow: hidden;
+}
+
+#s8 .card-top-text{
+    width: 100%;
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    
+}
+#s8 .card-top-text button{
+    padding: 0.2rem 0.5rem;
+    border-radius: 0.2rem;
+    border: 1px solid #000;
+   background-color: #fff;
+   font-family: Midnight;
+   font-size: 1.2rem;
+   text-transform: uppercase;
+   display: block;
+   
+   font-weight: 400;
+}
+#s8 .card-top-text span{
+    font-size: 1.2rem;
+    font-family: Reckless;
+}
+#s8 .card-top img{
+    height: 90%;
+    width: 90%;
+    object-fit: cover;
+    object-position: center;
+  position: absolute;
+  transition: all ease 0.3s;
+}
+
+
+#s8 .card-btm-text{
+    background-color: #fff;
+    padding: 0.6rem 0.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.3rem;
+    font-family: Reckless;
+    font-size: 1.2rem;
+}
+
+#s8 .card-top:hover img{
+    scale: 1.1;
+}
+
+#s8 .card-btm{
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+     font-family: Reckless;
+     align-items: start;
+}
+
+#s8 .card-btm h1{
+ font-family: 0.3rem;
+ font-weight: 100;
+}
+
+#s8 .card-btm h3{
+ font-family: 0.3rem;
+ font-weight: 100;
+}
+#s8 .card-btm p{
+ font-weight: 100;
+opacity: 0.5;
+width: 90%;
+}
+
+#s8 .btn-container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#s8 .btm-btn{
+    
+   padding: 1.2rem 3.5rem;
+    border: none;
+    background-color: #2A2857;
+    color: white;
+    font-family: Figtree;
+    border-radius: 50px;
+    font-size: 1.1rem;
+}
+
+#s9{
+    width: 100%;
+    min-height: 70vh;
+    position: relative;
+    overflow: hidden;
+}
+
+#s9 img{
+    width: 100%;
+    height: 70vh;
+    object-fit: cover;
+    object-position: center 30%;
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+}
+
+#s9 .context{
+    width: 380px;
+    min-height: 520px;
+    position: relative;
+    z-index: 2;
+    margin-left: 5rem;
+    margin-top: 4rem;
+    background-color: #F35E01;
+    border: 2px solid black;
+    border-radius: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 3rem;
+}
+
+#s9 .context h2{
+    color: white;
+    font-family: Reckless;
+    font-weight: 200;
+    font-size: clamp(3rem,5vw,4.5rem);
+    line-height: 1;
+}
+
+#s9 .btm p{
+    color: white;
+    font-family: Figtree;
+    font-weight: 200;
+    font-size: 1.2rem;
+    line-height: 1.5;
+}
+
+#s9 .btm button{
+    border: 1px solid black;
+    border-radius: 50px;
+    padding: 1rem 3rem;
+    font-size: 1rem;
+    background: white;
+    cursor: pointer;
+}
+
+#s10{
+    width: 100%;
+    min-height: 100vh;
+    background-color: #C0DBFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 4rem 2rem;
+    gap: 3rem;
+    overflow: hidden;
+}
+
+#s10 .s10p1{
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+#s10 .s10p1 h3{
+    color: black;
+    font-family: Midnight;
+    font-weight: 200;
+    font-size: clamp(2.5rem,5vw,4rem);
+}
+
+#s10 .s10p1 p{
+    color: grey;
+    font-family: Reckless;
+    font-weight: 200;
+    font-size: 1.4rem;
+    line-height: 1.5;
+}
+
+#s10 .s10p1btm{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 3rem;
+    flex-wrap: wrap;
+}
+
+.search{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+#s10 .s10p1btm .search input{
+    padding: 1rem 1.5rem;
+    width: 320px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+}
+
+#s10 .s10p1btm .search button{
+    padding: 1rem 2rem;
+    border: none;
+    background-color: #2A2857;
+    color: white;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.icons{
+    display: flex;
+    gap: 1rem;
+}
+
+#s10 .s10p1 i{
+    color: black;
+    font-size: 1.5rem;
+    border: 2px solid black;
+    border-radius: 50%;
+    padding: 0.8rem;
+    cursor: pointer;
+}
+
+#s10 .s10p2{
+    width: 100%;
+    max-width: 1400px;
+    background-color: #2A2857;
+    display: flex;
+    justify-content: space-between;
+    gap: 3rem;
+    padding: 3rem;
+    border-radius: 20px;
+    flex-wrap: wrap;
+}
+
+#s10 .s10p2 .p{
+    min-width: 150px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+#s10 .s10p2 h3{
+    color: white;
+    font-family: Reckless;
+    font-weight: 100;
+    font-size: 1.4rem;
+    line-height: 1.3;
+}
+
+#s10 .s10p2 p{
+    color: #b8b8b8;
+    font-family: Figtree;
+    font-weight: 100;
+    font-size: 1rem;
+    line-height: 1.4;
+    cursor: pointer;
+}
+
+.s10p3{
+    width: 100%;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.s10p3 img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: block;
+}
+
+
+@media (min-width:768px) {
+    nav{
+        width: 100%;
+        background-color: #FFFEFB;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-family: Reckless;
+        padding: 0.5rem 1rem;
+        font-size: 0.8rem;
+        position: sticky;
+    }
+
+    nav .navs1{
+        display: flex;
+        gap: 1rem;
+        width: 30%;
+    }
+
+    nav i{
+        display: none;
+    }
+
+    .navs1 h3{
+        font-size: 1rem;
+        font-weight: 300;
+    }
+
+    nav .navs2{
+        width: 5%;
+        display: flex;
+    }
+
+    .navs3{
+        display: flex;
+        width: 40%;
+        gap: 1rem;
+        justify-content: end;
+        align-items: center;
+    }
+
+    .navs3 h3{
+        font-weight: 300;
+        display: block;
+        font-size: 1rem;
+        white-space: nowrap;
+    }
+
+    #s1{
+        width: 100%;
+        text-align: start;
+        padding: 3rem 2rem;
+        background-image: url(https://www.twoleavestea.com/cdn/shop/files/AlpineBerry.webp?v=1774284236&width=2250.0);
+        background-size: cover;
+    }
+
+    #s1 h1{
+        width: 40%;
+    }
+
+    #s1 p{
+        width: 40%;
+    }
+
+    #s1 button{
+        width: fit-content;
+        padding: 1rem 4rem;
+        border-radius: 1.2rem;
+    }
+
+    #s2 .btn-1{
+        display: none;
+    }
+
+    .section2-text h1{
+        width: 70%;
+    }
+
+    .card-container{
+        margin-top: 5rem;
+    }
+
+    #s3{
+        width: 100%;
+        min-height: 80vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 4rem 2rem;
+        gap: 3rem;
+    }
+
+    #s3 .s3t{
+        width: 100%;
+        max-width: 900px;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    #s3 h3{
+        font-size: clamp(2.8rem,5vw,4rem);
+        line-height: 1;
+    }
+
+    .s3t input{
+        width: 80%;
+        padding: 1.5rem;
+    }
+
+    #s3 .s3b{
+        width: 100%;
+        max-width: 900px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+
+    #s4{
+        width: 100%;
+        min-height: 100vh;
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: white;
+        padding: 4rem 2rem;
+        gap: 3rem;
+    }
+
+    #s4 .btn-1 button{
+        padding: 0.2rem 1rem;
+        font-size: 1.7rem;
+    }
+
+    #s4 h1{
+        font-size: clamp(3rem,6vw,4.5rem);
+        text-align: center;
+        line-height: 1;
+    }
+
+    #s4 p{
+        text-align: center;
+        font-size: 1.2rem;
+        line-height: 1.5;
+        max-width: 650px;
+    }
+
+    .icon{
+        display: flex;
+        justify-content: center;
+        gap: 3rem;
+        width: 100%;
+        flex-wrap: wrap;
+    }
+
+    .icon img{
+        width: 80px;
+    }
+
+    #s4 .btn-2 button{
+        padding: 0.9rem 3rem;
+        font-size: 1rem;
+    }
+
+    #s5{
+        padding: 4rem 1.5rem;
+    }
+
+    #s5 h2{
+        font-size: 3rem;
+    }
+
+    .cards5{
+        gap: 1.2rem;
+    }
+
+    .card5{
+        width: 230px;
+        height: 320px;
+    }
+
+    .card5 .context h3{
+        font-size: 1.5rem;
+    }
+
+    .cardbtm{
+        padding: 0.5rem;
+    }
+
+    .cardbtm p{
+        font-size: 0.65rem;
+    }
+
+    .cardbtm button{
+        padding: 0.4rem 0.7rem;
+        font-size: 0.75rem;
+    }
+
+    #s6{
+        min-height: 75vh;
+    }
+
+    .s6p1{
+        width: 50%;
+        height: 75vh;
+    }
+
+    .s6p2{
+        width: 50%;
+        padding: 2rem;
+    }
+
+    .s6p2 h3{
+        font-size: 3.2rem;
+    }
+
+    .s6p2 p{
+        font-size: 1rem;
+    }
+
+    .s6p2 button{
+        padding: 0.8rem 2rem;
+        font-size: 0.9rem;
+    }
+
+    #s9{
+        min-height: 55vh;
+    }
+
+    #s9 img{
+        height: 55vh;
+    }
+
+    #s9 .context{
+        width: 280px;
+        min-height: 400px;
+        margin-left: 2rem;
+        margin-top: 2rem;
+        padding: 2rem;
+    }
+
+    #s9 .context h2{
+        font-size: 3rem;
+    }
+
+    #s9 .btm p{
+        font-size: 0.95rem;
+    }
+
+    #s9 .btm button{
+        padding: 0.8rem 2rem;
+        font-size: 0.85rem;
+    }
+
+    #s10{
+        padding: 3rem 1.5rem;
+    }
+
+    #s10 .s10p1 h3{
+        font-size: 2.5rem;
+    }
+
+    #s10 .s10p1 p{
+        font-size: 1.1rem;
+    }
+
+    #s10 .s10p1btm{
+        gap: 2rem;
+    }
+
+    #s10 .s10p2{
+        gap: 2rem;
+
+        padding: 2rem;
+    }
+
+    #s10 .s10p2 .p{
+        min-width: 160px;
+    }
+
+    #s10 .s10p2 h3{
+        font-size: 1.1rem;
+    }
+
+    #s10 .s10p2 p{
+        font-size: 0.9rem;
+    }
+
+    .s10p3 img{
+        border-radius: 15px;
+    }
+}
+
+@media (min-width:1024px) {
+
+    nav{
+   width: 100%;
+ background-color: #FFFEFB;
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+ font-family: Reckless;
+  padding: 0.5rem 1rem;
+   font-size: 0.8rem;
+   position: sticky;
+
+}
+    nav .navs1{
+    display: flex;
+    gap: 1rem;
+    width: 30%; 
+}
+nav i{
+    display: none;
+}
+
+.navs1 h3{
+  font-size: 1rem;
+font-weight: 300;
+}
+
+nav .navs2{
+    width: 5%;
+    display: flex;
+}
+.navs3{
+    display: flex;
+    width: 40%;
+    gap: 1rem;
+    justify-content: end;
+    align-items: end;
+ 
+}
+.navs3 h3{
+font-weight: 300;
+display: block;
+font-size: 1rem;
+white-space: nowrap;
+}
+
+#s1{
+    width: 100%;
+   text-align: start;
+   padding: 3rem 2rem;
+   background-image: url(https://www.twoleavestea.com/cdn/shop/files/AlpineBerry.webp?v=1774284236&width=2250.0);
+   background-size: cover;
+}
+
+#s1 h1{
+    width: 20%;
+}
+#s1 p{
+    width: 20%;
+}
+
+#s1 button{
+    width: fit-content;
+    padding: 1rem 4rem;
+    border-radius: 1.2rem,;
+}
+
+#s2  .btn-1{
+    display: none;
+ }
+ .section2-text h1{
+     width: 50%;
+   
+ }
+ .card-container{
+     margin-top: 8rem;
+ }
+
+ #s3{
+    width: 100%;
+    min-height: 80vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding: 4rem 2rem;
+    gap: 3rem;
+}
+
+#s3 .s3t{
+    width: 100%;
+    max-width: 900px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+#s3 h3{
+    font-size: clamp(3rem,5vw,5rem);
+    line-height: 1;
+}
+
+.s3t input{
+    width: 60%;
+    padding: 2rem;
+}
+
+#s3 .s3b{
+    width: 100%;
+    max-width: 900px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+
+#s4{
+    width: 100%;
+    min-height: 100vh;
+    background-color: #DAAEEA;
+    background-image: url(https://images.unsplash.com/photo-1476231682828-37e571bc172f?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Zm9yZXN0JTIwYWVyaWFsfGVufDB8fDB8fHww);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    padding: 5rem 3rem;
+    gap: 4rem;
+}
+
+#s4 .btn-1 button{
+    padding: 0.2rem 1rem;
+    font-size: 2rem;
+    font-family: Midnight;
+    font-weight: 600;
+    background-color: #aeddea;
+    border-radius: 1rem;
+    text-transform: uppercase;
+    rotate: -5deg;
+    letter-spacing: 2px;
+}
+
+#s4 h1{
+    font-size: clamp(4rem,6vw,5rem);
+    text-align: center;
+    font-family: Roboto;
+    line-height: 0.9;
+}
+
+#s4 p{
+    text-align: center;
+    font-family: Reckless;
+    font-size: 1.4rem;
+    font-weight: 100;
+    line-height: 1.5;
+    max-width: 700px;
+}
+
+.icon{
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.icon div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+}
+
+.icon img{
+    width: 90px;
+    height: auto;
+}
+
+#s4 .btn-2 button{
+    padding: 1rem 4rem;
+    font-size: 1.2rem;
+    border-radius: 50px;
+    background-color: white;
+    border: none;
+}
+
+
+#s5{
+    padding: 5rem 2rem;
+}
+
+#s5 h2{
+    font-size: 3.5rem;
+}
+
+.cards5{
+    gap: 1.5rem;
+}
+
+.card5{
+    width: 250px;
+    height: 340px;
+}
+
+.card5 .context h3{
+    font-size: 1.7rem;
+}
+
+.cardbtm{
+    padding: 0.5rem;
+}
+
+.cardbtm p{
+    font-size: 0.7rem;
+}
+
+.cardbtm button{
+    padding: 0.5rem 0.8rem;
+    font-size: 0.8rem;
+}
+
+#s6{
+    min-height: 80vh;
+}
+
+.s6p1{
+    width: 50%;
+    height: 80vh;
+}
+
+.s6p2{
+    width: 50%;
+    padding: 3rem;
+}
+
+.s6p2 h3{
+    font-size: 4rem;
+}
+
+.s6p2 p{
+    font-size: 1.1rem;
+}
+
+.s6p2 button{
+    padding: 0.9rem 2.5rem;
+    font-size: 0.9rem;
+}
+
+#s9{
+    min-height: 60vh;
+}
+
+#s9 img{
+    height: 60vh;
+}
+
+#s9 .context{
+    width: 320px;
+    min-height: 450px;
+    margin-left: 3rem;
+    margin-top: 3rem;
+    padding: 2.5rem;
+}
+
+#s9 .context h2{
+    font-size: 3.5rem;
+}
+
+#s9 .btm p{
+    font-size: 1rem;
+}
+
+#s9 .btm button{
+    padding: 0.9rem 2.5rem;
+    font-size: 0.9rem;
+}
+
+#s10{
+    padding: 3rem 1.5rem;
+}
+
+#s10 .s10p1 h3{
+    font-size: 3rem;
+}
+
+#s10 .s10p1 p{
+    font-size: 1.2rem;
+}
+
+#s10 .s10p1btm{
+    gap: 2rem;
+}
+
+#s10 .s10p2{
+    gap: 2rem;
+    padding: 2rem;
+}
+
+#s10 .s10p2 .p{
+    min-width: 180px;
+}
+
+#s10 .s10p2 h3{
+    font-size: 1.2rem;
+}
+
+#s10 .s10p2 p{
+    font-size: 0.95rem;
+}
+
+.s10p3 img{
+    border-radius: 15px;
+}}
